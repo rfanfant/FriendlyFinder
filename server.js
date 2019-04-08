@@ -16,8 +16,8 @@ app.use(bodyParser.raw({type: 'application/vnd.custom-type'}))
 app.use(bodyParser.text({type: 'text/html' }));
 
 // include our required routes
-require("./routing/apiRoutes.js")(app);
-require("./routing/htmlRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 
 // start listening to our port
