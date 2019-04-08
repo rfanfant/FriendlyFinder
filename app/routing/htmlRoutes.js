@@ -10,10 +10,10 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname + "/../public/survey.html"));
     });
 
-    app.get("/", function (req, res) {
-        res.json(path.join(__dirname, "/../public/home.html"));
+    // app.get("/", function (req, res) {
+    //     res.json(path.join(__dirname, "/../public/home.html"));
 
-    });
+    // });
 
     // dish up our home.html for any other path
     app.use(function (req, res) {
