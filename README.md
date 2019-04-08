@@ -31,7 +31,15 @@ The following image provides the user with a sneak preview of a few of the quest
 
 <br>
 <br>
-Once the user has completed the survey the best match is found and both the name and photo of the match is displayed to the user. 
+Once the user has completed the survey the best match is found and both the name and photo of the match is displayed to the user. The users input is converted into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`), which is then compared to other user's scores, question by question. Adding up the differences to calculate a number which represents the total differences between the users participating on this dating site.
+
+     * Example:
+       * User 1: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`
+       * User 2: `[3, 2, 6, 4, 5, 1, 2, 5, 4, 1]`
+       * Total Difference: **2 + 1 + 2 =** **_5_**
+
+
+  The application calculates the absolute value of the differences with the closest match (least amount of differences) being the user with the closest matching answerers. Once the most compatible friend is found, the "match" is displayed in a modal pop-up. 
 
 <br>
 <br>
@@ -46,6 +54,7 @@ Once the user has completed the survey the best match is found and both the name
 
 
 ## Application structure:
+
 
 The FriendFinder project is divided organized into the following format:
 
